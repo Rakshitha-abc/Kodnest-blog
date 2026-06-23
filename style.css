@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Georgia, serif;
+    background:#f5f1e8;
+    color:#222;
+    line-height:1.7;
+}
+
+header{
+    text-align:center;
+    padding:20px;
+    border-bottom:4px solid black;
+}
+
+header h1{
+    font-size:60px;
+    letter-spacing:5px;
+}
+
+header p{
+    font-style:italic;
+    margin-top:10px;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:15px;
+    border-bottom:2px solid black;
+    background:white;
+}
+
+nav a{
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+    font-size:18px;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+.newspaper{
+    padding:25px;
+    column-count:3;
+    column-gap:40px;
+    text-align:justify;
+}
+
+.headline{
+    column-span:all;
+    margin-bottom:25px;
+}
+
+.headline h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.headline img{
+    width:100%;
+    max-height:350px;
+    object-fit:cover;
+    margin-bottom:15px;
+    border:2px solid black;
+}
+
+section,
+aside{
+    margin-bottom:20px;
+}
+
+h3{
+    margin-bottom:10px;
+    border-bottom:1px solid black;
+    padding-bottom:5px;
+}
+
+p{
+    margin-bottom:10px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+th,td{
+    border:1px solid black;
+    padding:8px;
+    text-align:center;
+}
+
+th{
+    background:#ddd;
+}
+
+section img{
+    width:100%;
+    margin:10px 0;
+    border:1px solid black;
+}
+
+blockquote{
+    border-left:4px solid black;
+    padding-left:10px;
+    font-style:italic;
+    margin-top:10px;
+}
+
+aside{
+    background:#ece7db;
+    padding:10px;
+    border:1px solid black;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    border-top:4px solid black;
+    background:#fff;
+}
+
+footer h3{
+    border:none;
+}
+
+@media(max-width:900px){
+    .newspaper{
+        column-count:2;
+    }
+
+    header h1{
+        font-size:40px;
+    }
+}
+
+@media(max-width:600px){
+    .newspaper{
+        column-count:1;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    header h1{
+        font-size:30px;
+    }
+
+    .headline h2{
+        font-size:28px;
+    }
+}
